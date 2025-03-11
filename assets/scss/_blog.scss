@@ -1,5 +1,5 @@
-//blog section
-.blog-right-bar {
+//Projects section
+.Projects-right-bar {
 	padding: 40px 30px;
 	background: $bg1;
 	background: $bg1;
@@ -119,8 +119,8 @@
 	}
 }
 
-.blog-post-details {
-	.single-blog-post {
+.Projects-post-details {
+	.single-Projects-post {
 		.post-content {
 			.post-marry {
 				i {
@@ -271,10 +271,10 @@
 		}
 	}
 }
-//blog section
+//Projects section
 
-//mblog section
-.blog-widget-item {
+//mProjects section
+.Projects-widget-item {
 	.thumb {
 		img {
 			transition: all 0.5s;
@@ -294,14 +294,14 @@
 		}
 	}
 }
-.blog-widget-item-022 {
+.Projects-widget-item-022 {
 	.thumb {
 		height: 100%;
 		img {
 			width: 100%;
 			height: 100%;
 		}
-		.blog-cont {
+		.Projects-cont {
 			width: 100%;
 			position: absolute;
 			left: 0;
@@ -324,7 +324,7 @@
 			z-index: 1;
 		}
 	}
-	.blog-cont {
+	.Projects-cont {
 		h5 {
 			a {
 				.texts {
@@ -345,7 +345,7 @@
 	}
 	@include maxQuery(1399) {
 		.thumb {
-			.blog-cont {
+			.Projects-cont {
 				padding: 20px;
 				.texts {
 					font-size: 20px;
@@ -360,7 +360,7 @@
 	}
 	@include maxQuery(575) {
 		.thumb {
-			.blog-cont {
+			.Projects-cont {
 				.texts {
 					font-size: 18px;
 					max-width: 402px;
@@ -379,7 +379,7 @@
 	padding: 8px 18px;
 	display: inline-block;
 }
-//blog section
+//Projects section
 
 //Case Study Section
 .case-infobox {
@@ -513,16 +513,16 @@
 }
 //Case Study Section
 
-//Blog version03 Section
-.blog-content-wrapperv3 {
-	.blog-v3-inner {
+//Projects version03 Section
+.Projects-content-wrapperv3 {
+	.Projects-v3-inner {
 		position: relative;
 		h5 {
 			a {
 				line-height: 35px;
 			}
 		}
-		.blog-hover {
+		.Projects-hover {
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -531,7 +531,7 @@
 			visibility: hidden;
 		}
 		&:hover {
-			.blog-hover {
+			.Projects-hover {
 				transform: translate(-50%, -50%);
 				opacity: 1;
 				visibility: visible;
@@ -551,11 +551,11 @@
 		}
 	}
 }
-//Blog version03 Section
+//Projects version03 Section
 
-//Blog version04 Section
-.blog-widget-itemv4 {
-	.blog-v4-btn {
+//Projects version04 Section
+.Projects-widget-itemv4 {
+	.Projects-v4-btn {
 		background: $white;
 		border-radius: 14px;
 		width: 70px;
@@ -570,7 +570,7 @@
 		}
 	}
 	&:hover {
-		.blog-v4-btn {
+		.Projects-v4-btn {
 			background: $theme;
 			i {
 				color: $black;
@@ -583,7 +583,7 @@
 		}
 	}
 	@include maxQuery(1399) {
-		.blog-v4-btn {
+		.Projects-v4-btn {
 			width: 60px;
 			height: 58px;
 			i {
@@ -592,7 +592,7 @@
 		}
 	}
 	@include maxQuery(1199) {
-		.blog-v4-btn {
+		.Projects-v4-btn {
 			width: 48px;
 			height: 48px;
 			i {
@@ -601,7 +601,7 @@
 		}
 	}
 	@include maxQuery(767) {
-		.blog-v4-btn {
+		.Projects-v4-btn {
 			width: 39px;
 			height: 39px;
 			i {
@@ -610,7 +610,7 @@
 		}
 	}
 	@include maxQuery(575) {
-		.blog-v4-btn {
+		.Projects-v4-btn {
 			width: 48px;
 			height: 48px;
 			i {
@@ -619,10 +619,10 @@
 		}
 	}
 }
-//Blog version04 Section
+//Projects version04 Section
 
-.blog-post-details {
-	.blog-singelbtn {
+.Projects-post-details {
+	.Projects-singelbtn {
 		color: $black;
 
 		&:hover {
@@ -809,9 +809,9 @@
         }
     }
 
-    .blog-post-details {
+    .Projects-post-details {
 
-        .single-blog-post {
+        .single-Projects-post {
             .post-content {
                 .post-list {
                     @include flex;
@@ -961,7 +961,7 @@
                 }
             }
 
-            .blog-single-comment {
+            .Projects-single-comment {
                 border-bottom: 1px solid #454750;
 
                 @include breakpoint (max-sm){
@@ -1064,10 +1064,10 @@
     }
 }
 
-.blog-box-item {
+.Projects-box-item {
     margin-top: 30px;
     
-   .blog-content {
+   .Projects-content {
        margin-bottom: 25px;
 
        .post-list {
@@ -1111,7 +1111,7 @@
       }
    }
 
-   .blog-image {
+   .Projects-image {
        position: relative;
        overflow: hidden;
 
@@ -1136,7 +1136,7 @@
    }
 
    &:hover {
-       .blog-image {
+       .Projects-image {
            img {
                transform: scale(1.1);
            }

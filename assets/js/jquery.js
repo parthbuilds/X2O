@@ -4877,7 +4877,7 @@
 					return T;
 				for (i in ((g = ce.event && v.global) &&
 					0 == ce.active++ &&
-					ce.event.trigger("ajaWebgent"),
+					ce.event.trigger("ajaX2Ot"),
 				(v.type = v.type.toUpperCase()),
 				(v.hasContent = !Ft.test(v.type)),
 				(f = v.url.replace(Mt, "")),
@@ -5569,7 +5569,7 @@
 		}),
 		ce.each(
 			[
-				"ajaWebgent",
+				"ajaX2Ot",
 				"ajaxStop",
 				"ajaxComplete",
 				"ajaxError",

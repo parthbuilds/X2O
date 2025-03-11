@@ -1,10 +1,4 @@
-/*
-Theme Name: Webgen
-Author: Gramentheme
-Author URI: https://themeforest.net/user/pixel-drop/portfolio
-Description: Webgen - Digital Agency HTML Template<
-Version: 1.0.0
-*/
+
 /*CSS Table Of Content Ends Here*/
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"); */
 
@@ -14,7 +8,6 @@ Version: 1.0.0
   font-weight:200 900;
   font-style: normal;
 }
-
 
 
 :root {
@@ -1929,17 +1922,17 @@ footer {
   transform: rotate(-40deg);
 }
 
-.blog-right-bar {
+.Projects-right-bar {
   padding: 40px 30px;
   background: var(--bg1);
   background: var(--bg1);
 }
-.blog-right-bar .box .wid-title h6 {
+.Projects-right-bar .box .wid-title h6 {
   position: relative;
   padding-bottom: 30px;
   color: var(--white);
 }
-.blog-right-bar .box .search-widget form {
+.Projects-right-bar .box .search-widget form {
   width: 100%;
   position: relative;
   border: 1px solid #414141;
@@ -1948,7 +1941,7 @@ footer {
   background: var(--black);
   padding: 0px 20px;
 }
-.blog-right-bar .box .search-widget form input {
+.Projects-right-bar .box .search-widget form input {
   background-color: var(--white);
   font-size: 15px;
   padding: 14px 0px;
@@ -1957,19 +1950,19 @@ footer {
   color: var(--pra-clr);
   background: transparent;
 }
-.blog-right-bar .box .search-widget form button {
+.Projects-right-bar .box .search-widget form button {
   outline: none;
   border: unset;
   color: var(--theme);
 }
-.blog-right-bar .box .category ul li a {
+.Projects-right-bar .box .category ul li a {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
 }
-.blog-right-bar .box .category ul li a::before {
+.Projects-right-bar .box .category ul li a::before {
   position: absolute;
   left: 0;
   width: 4px;
@@ -1979,32 +1972,32 @@ footer {
   content: "";
   transition: all 0.4s;
 }
-.blog-right-bar .box .category ul li a:hover {
+.Projects-right-bar .box .category ul li a:hover {
   color: var(--theme);
 }
-.blog-right-bar .box .category ul li a:hover span {
+.Projects-right-bar .box .category ul li a:hover span {
   color: var(--theme);
 }
-.blog-right-bar .box .category ul li a:hover::before {
+.Projects-right-bar .box .category ul li a:hover::before {
   background: var(--theme);
 }
-.blog-right-bar .box .recent-postwrap .recent-items .recent-content a {
+.Projects-right-bar .box .recent-postwrap .recent-items .recent-content a {
   color: var(--white);
   font-weight: 600;
   display: block;
   line-height: 24px;
 }
-.blog-right-bar .box .recent-postwrap .recent-items:hover .recent-content a {
+.Projects-right-bar .box .recent-postwrap .recent-items:hover .recent-content a {
   color: var(--theme);
 }
-.blog-right-bar .box .recent-postwrap .recent-items:not(:last-child) {
+.Projects-right-bar .box .recent-postwrap .recent-items:not(:last-child) {
   border-bottom: 1px solid var(--border1);
   padding-bottom: 30px;
 }
-.blog-right-bar .box .recent-postwrap .recent-items:not(:first-child) {
+.Projects-right-bar .box .recent-postwrap .recent-items:not(:first-child) {
   padding-top: 30px;
 }
-.blog-right-bar .box .tagwrap a {
+.Projects-right-bar .box .tagwrap a {
   color: #646464;
   font-size: 14px;
   line-height: 27px;
@@ -2012,40 +2005,40 @@ footer {
   transition: all 0.4s;
   text-transform: capitalize;
 }
-.blog-right-bar .box .tagwrap a:last-child {
+.Projects-right-bar .box .tagwrap a:last-child {
   margin-right: 0;
 }
-.blog-right-bar .box .tagwrap a:hover {
+.Projects-right-bar .box .tagwrap a:hover {
   color: var(--theme) !important;
 }
 @media (max-width: 1399px) {
-  .blog-right-bar {
+  .Projects-right-bar {
     padding: 28px 20px;
   }
 }
 @media (max-width: 1199px) {
-  .blog-right-bar {
+  .Projects-right-bar {
     padding: 24px 16px;
   }
 }
 
-.blog-post-details .single-blog-post .post-content .post-marry i {
+.Projects-post-details .single-Projects-post .post-content .post-marry i {
   font-size: 10px;
 }
-.blog-post-details .single-blog-post .post-content h3 {
+.Projects-post-details .single-Projects-post .post-content h3 {
   margin-bottom: 20px;
   font-size: 32px;
 }
-.blog-post-details .single-blog-post .post-content h3 a:hover {
+.Projects-post-details .single-Projects-post .post-content h3 a:hover {
   color: var(--theme);
 }
-.blog-post-details .single-blog-post .post-content .blod-dlist li {
+.Projects-post-details .single-Projects-post .post-content .blod-dlist li {
   position: relative;
   padding-left: 10px;
   display: flex;
   align-items: center;
 }
-.blog-post-details .single-blog-post .post-content .blod-dlist li::before {
+.Projects-post-details .single-Projects-post .post-content .blod-dlist li::before {
   position: absolute;
   left: 0;
   width: 4px;
@@ -2054,10 +2047,10 @@ footer {
   content: "";
   border-radius: 50%;
 }
-.blog-post-details .single-blog-post .post-content .hilight-text {
+.Projects-post-details .single-Projects-post .post-content .hilight-text {
   background-color: var(--bg1);
 }
-.blog-post-details .single-blog-post .post-content .hilight-text p {
+.Projects-post-details .single-Projects-post .post-content .hilight-text p {
   max-width: 660px;
   font-weight: 500;
   text-transform: capitalize;
@@ -2065,7 +2058,7 @@ footer {
   line-height: 36px;
 }
 @media (max-width: 1199px) {
-  .blog-post-details .hilight-text p {
+  .Projects-post-details .hilight-text p {
     font-size: 16px !important;
     line-height: 26px !important;
   }
@@ -2153,27 +2146,27 @@ footer {
   transform: rotate(40deg);
 }
 
-.blog-widget-item .thumb img {
+.Projects-widget-item .thumb img {
   transition: all 0.5s;
 }
-.blog-widget-item:hover .thumb img {
+.Projects-widget-item:hover .thumb img {
   transform: scale(1.1);
 }
-.blog-widget-item:hover h5 {
+.Projects-widget-item:hover h5 {
   transform: scale(0.9);
 }
-.blog-widget-item:hover h5 a {
+.Projects-widget-item:hover h5 a {
   color: var(--theme);
 }
 
-.blog-widget-item-022 .thumb {
+.Projects-widget-item-022 .thumb {
   height: 100%;
 }
-.blog-widget-item-022 .thumb img {
+.Projects-widget-item-022 .thumb img {
   width: 100%;
   height: 100%;
 }
-.blog-widget-item-022 .thumb .blog-cont {
+.Projects-widget-item-022 .thumb .Projects-cont {
   width: 100%;
   position: absolute;
   left: 0;
@@ -2181,7 +2174,7 @@ footer {
   padding: 40px;
   z-index: 1;
 }
-.blog-widget-item-022 .thumb::before {
+.Projects-widget-item-022 .thumb::before {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2191,32 +2184,32 @@ footer {
   height: 100%;
   z-index: 1;
 }
-.blog-widget-item-022 .blog-cont h5 a .texts {
+.Projects-widget-item-022 .Projects-cont h5 a .texts {
   font-size: 24px;
   max-width: 402px;
   line-height: 34px;
 }
-.blog-widget-item-022 .blog-cont h5 a i {
+.Projects-widget-item-022 .Projects-cont h5 a i {
   font-size: 34px;
 }
-.blog-widget-item-022:hover h5 {
+.Projects-widget-item-022:hover h5 {
   transform: scale(1);
 }
 @media (max-width: 1399px) {
-  .blog-widget-item-022 .thumb .blog-cont {
+  .Projects-widget-item-022 .thumb .Projects-cont {
     padding: 20px;
   }
-  .blog-widget-item-022 .thumb .blog-cont .texts {
+  .Projects-widget-item-022 .thumb .Projects-cont .texts {
     font-size: 20px;
     max-width: 402px;
     line-height: 34px;
   }
-  .blog-widget-item-022 .thumb .blog-cont i {
+  .Projects-widget-item-022 .thumb .Projects-cont i {
     font-size: 24px;
   }
 }
 @media (max-width: 575px) {
-  .blog-widget-item-022 .thumb .blog-cont .texts {
+  .Projects-widget-item-022 .thumb .Projects-cont .texts {
     font-size: 18px;
     max-width: 402px;
     line-height: 24px;
@@ -2352,13 +2345,13 @@ footer {
   background: var(--theme);
 }
 
-.blog-content-wrapperv3 .blog-v3-inner {
+.Projects-content-wrapperv3 .Projects-v3-inner {
   position: relative;
 }
-.blog-content-wrapperv3 .blog-v3-inner h5 a {
+.Projects-content-wrapperv3 .Projects-v3-inner h5 a {
   line-height: 35px;
 }
-.blog-content-wrapperv3 .blog-v3-inner .blog-hover {
+.Projects-content-wrapperv3 .Projects-v3-inner .Projects-hover {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2366,21 +2359,21 @@ footer {
   opacity: 0;
   visibility: hidden;
 }
-.blog-content-wrapperv3 .blog-v3-inner:hover .blog-hover {
+.Projects-content-wrapperv3 .Projects-v3-inner:hover .Projects-hover {
   transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
 }
-.blog-content-wrapperv3 .blog-v3-inner:hover h5 a {
+.Projects-content-wrapperv3 .Projects-v3-inner:hover h5 a {
   color: var(--theme);
 }
 @media (max-width: 1399px) {
-  .blog-content-wrapperv3 .blog-v3-inner h5 a {
+  .Projects-content-wrapperv3 .Projects-v3-inner h5 a {
     line-height: 28px;
   }
 }
 
-.blog-widget-itemv4 .blog-v4-btn {
+.Projects-widget-itemv4 .Projects-v4-btn {
   background: var(--white);
   border-radius: 14px;
   width: 70px;
@@ -2390,60 +2383,60 @@ footer {
   right: 0;
   transition: all 0.4s;
 }
-.blog-widget-itemv4 .blog-v4-btn i {
+.Projects-widget-itemv4 .Projects-v4-btn i {
   color: var(--black);
   font-size: 24px;
 }
-.blog-widget-itemv4:hover .blog-v4-btn {
+.Projects-widget-itemv4:hover .Projects-v4-btn {
   background: var(--theme);
 }
-.blog-widget-itemv4:hover .blog-v4-btn i {
+.Projects-widget-itemv4:hover .Projects-v4-btn i {
   color: var(--black);
 }
-.blog-widget-itemv4:hover h5 a {
+.Projects-widget-itemv4:hover h5 a {
   color: var(--theme);
 }
 @media (max-width: 1399px) {
-  .blog-widget-itemv4 .blog-v4-btn {
+  .Projects-widget-itemv4 .Projects-v4-btn {
     width: 60px;
     height: 58px;
   }
-  .blog-widget-itemv4 .blog-v4-btn i {
+  .Projects-widget-itemv4 .Projects-v4-btn i {
     font-size: 16px;
   }
 }
 @media (max-width: 1199px) {
-  .blog-widget-itemv4 .blog-v4-btn {
+  .Projects-widget-itemv4 .Projects-v4-btn {
     width: 48px;
     height: 48px;
   }
-  .blog-widget-itemv4 .blog-v4-btn i {
+  .Projects-widget-itemv4 .Projects-v4-btn i {
     font-size: 16px;
   }
 }
 @media (max-width: 767px) {
-  .blog-widget-itemv4 .blog-v4-btn {
+  .Projects-widget-itemv4 .Projects-v4-btn {
     width: 39px;
     height: 39px;
   }
-  .blog-widget-itemv4 .blog-v4-btn i {
+  .Projects-widget-itemv4 .Projects-v4-btn i {
     font-size: 16px;
   }
 }
 @media (max-width: 575px) {
-  .blog-widget-itemv4 .blog-v4-btn {
+  .Projects-widget-itemv4 .Projects-v4-btn {
     width: 48px;
     height: 48px;
   }
-  .blog-widget-itemv4 .blog-v4-btn i {
+  .Projects-widget-itemv4 .Projects-v4-btn i {
     font-size: 16px;
   }
 }
 
-.blog-post-details .blog-singelbtn {
+.Projects-post-details .Projects-singelbtn {
   color: var(--black);
 }
-.blog-post-details .blog-singelbtn:hover i {
+.Projects-post-details .Projects-singelbtn:hover i {
   color: var(--black) !important;
 }
 
@@ -2597,18 +2590,18 @@ footer {
     height: 420px;
   }
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .post-list {
+.news-details-area .Projects-post-details .single-Projects-post .post-content .post-list {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .post-list li {
+.news-details-area .Projects-post-details .single-Projects-post .post-content .post-list li {
   font-size: 16px;
   font-weight: 500;
   color: #ABABAB;
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .post-list li span {
+.news-details-area .Projects-post-details .single-Projects-post .post-content .post-list li span {
   color: var(--white);
   display: inline-block;
   font-weight: 500;
@@ -2619,29 +2612,29 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 5px 20px;
 }
-.news-details-area .blog-post-details .single-blog-post .post-content h3 {
+.news-details-area .Projects-post-details .single-Projects-post .post-content h3 {
   margin-bottom: 20px;
   font-size: 48px;
 }
 @media (max-width: 767px) {
-  .news-details-area .blog-post-details .single-blog-post .post-content h3 {
+  .news-details-area .Projects-post-details .single-Projects-post .post-content h3 {
     font-size: 38px;
   }
 }
 @media (max-width: 575px) {
-  .news-details-area .blog-post-details .single-blog-post .post-content h3 {
+  .news-details-area .Projects-post-details .single-Projects-post .post-content h3 {
     font-size: 28px;
   }
 }
-.news-details-area .blog-post-details .single-blog-post .post-content h3 a:hover {
+.news-details-area .Projects-post-details .single-Projects-post .post-content h3 a:hover {
   color: var(--theme);
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .hilight-text {
+.news-details-area .Projects-post-details .single-Projects-post .post-content .hilight-text {
   border-left: 4px solid var(--theme);
   padding: 40px;
   background-color: #1D1D1D;
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .hilight-text p {
+.news-details-area .Projects-post-details .single-Projects-post .post-content .hilight-text p {
   font-weight: 600;
   text-transform: capitalize;
   font-style: italic;
@@ -2649,26 +2642,26 @@ footer {
   color: var(--white);
   line-height: 162%;
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .hilight-text svg {
+.news-details-area .Projects-post-details .single-Projects-post .post-content .hilight-text svg {
   float: right;
   margin-top: -30px;
 }
-.news-details-area .blog-post-details .single-blog-post .post-content .details-image img {
+.news-details-area .Projects-post-details .single-Projects-post .post-content .details-image img {
   width: 100%;
   height: 100%;
 }
-.news-details-area .blog-post-details .tag-share-wrap {
+.news-details-area .Projects-post-details .tag-share-wrap {
   border-top: 1px solid #454750;
   border-bottom: 1px solid #454750;
   padding: 30px 0;
 }
-.news-details-area .blog-post-details .tag-share-wrap .tagcloud span {
+.news-details-area .Projects-post-details .tag-share-wrap .tagcloud span {
   display: inline-block;
   font-weight: 600;
   color: var(--white);
   margin-right: 15px;
 }
-.news-details-area .blog-post-details .tag-share-wrap .tagcloud a {
+.news-details-area .Projects-post-details .tag-share-wrap .tagcloud a {
   display: inline-block;
   padding: 12px 26px;
   line-height: 1;
@@ -2682,90 +2675,90 @@ footer {
   color: #BEBEBE;
 }
 @media (max-width: 575px) {
-  .news-details-area .blog-post-details .tag-share-wrap .tagcloud a {
+  .news-details-area .Projects-post-details .tag-share-wrap .tagcloud a {
     margin-bottom: 5px;
   }
 }
-.news-details-area .blog-post-details .tag-share-wrap .tagcloud a:hover {
+.news-details-area .Projects-post-details .tag-share-wrap .tagcloud a:hover {
   background-color: var(--theme);
   color: var(--black);
 }
-.news-details-area .blog-post-details .tag-share-wrap .social-share span {
+.news-details-area .Projects-post-details .tag-share-wrap .social-share span {
   font-size: 16px;
   color: var(--white);
   font-weight: 600;
 }
-.news-details-area .blog-post-details .tag-share-wrap .social-share a {
+.news-details-area .Projects-post-details .tag-share-wrap .social-share a {
   font-size: 16px;
   color: #BEBEBE;
 }
-.news-details-area .blog-post-details .tag-share-wrap .social-share a:not(:last-child) {
+.news-details-area .Projects-post-details .tag-share-wrap .social-share a:not(:last-child) {
   margin-right: 10px;
 }
-.news-details-area .blog-post-details .tag-share-wrap .social-share a:hover {
+.news-details-area .Projects-post-details .tag-share-wrap .social-share a:hover {
   color: var(--theme);
 }
-.news-details-area .blog-post-details .comments-area {
+.news-details-area .Projects-post-details .comments-area {
   margin-top: 40px;
 }
-.news-details-area .blog-post-details .comments-area .comments-heading {
+.news-details-area .Projects-post-details .comments-area .comments-heading {
   margin-bottom: 30px;
 }
 @media (max-width: 575px) {
-  .news-details-area .blog-post-details .comments-area .comments-heading {
+  .news-details-area .Projects-post-details .comments-area .comments-heading {
     margin-bottom: 20px;
   }
 }
-.news-details-area .blog-post-details .comments-area .comments-heading h3 {
+.news-details-area .Projects-post-details .comments-area .comments-heading h3 {
   font-size: 24px;
   font-weight: 700;
 }
 @media (max-width: 575px) {
-  .news-details-area .blog-post-details .comments-area .comments-heading h3 {
+  .news-details-area .Projects-post-details .comments-area .comments-heading h3 {
     font-size: 22px;
   }
 }
-.news-details-area .blog-post-details .comments-area .blog-single-comment {
+.news-details-area .Projects-post-details .comments-area .Projects-single-comment {
   border-bottom: 1px solid #454750;
 }
 @media (max-width: 575px) {
-  .news-details-area .blog-post-details .comments-area .blog-single-comment {
+  .news-details-area .Projects-post-details .comments-area .Projects-single-comment {
     flex-wrap: wrap;
     gap: 20px;
   }
 }
-.news-details-area .blog-post-details .comments-area .blog-single-comment .content .head .con h5 {
+.news-details-area .Projects-post-details .comments-area .Projects-single-comment .content .head .con h5 {
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 20px;
 }
-.news-details-area .blog-post-details .comments-area .blog-single-comment .content .head .star i {
+.news-details-area .Projects-post-details .comments-area .Projects-single-comment .content .head .star i {
   color: var(--theme);
   font-size: 14px;
 }
-.news-details-area .blog-post-details .comments-area .blog-single-comment .content .reply {
+.news-details-area .Projects-post-details .comments-area .Projects-single-comment .content .reply {
   border-radius: 30px;
   padding: 5px 15px;
   font-weight: 400;
   background-color: #161616;
   color: var(--theme);
 }
-.news-details-area .blog-post-details .comment-form-wrap h3 {
+.news-details-area .Projects-post-details .comment-form-wrap h3 {
   font-size: 32px;
   margin-bottom: 30px;
 }
 @media (max-width: 575px) {
-  .news-details-area .blog-post-details .comment-form-wrap h3 {
+  .news-details-area .Projects-post-details .comment-form-wrap h3 {
     font-size: 28px;
     margin-bottom: 20px;
   }
 }
-.news-details-area .blog-post-details .comment-form-wrap .form-clt span {
+.news-details-area .Projects-post-details .comment-form-wrap .form-clt span {
   color: var(--black);
   display: inline-block;
   margin-bottom: 10px;
 }
-.news-details-area .blog-post-details .comment-form-wrap .form-clt input, .news-details-area .blog-post-details .comment-form-wrap .form-clt textarea {
+.news-details-area .Projects-post-details .comment-form-wrap .form-clt input, .news-details-area .Projects-post-details .comment-form-wrap .form-clt textarea {
   width: 100%;
   outline: none;
   border: none;
@@ -2776,50 +2769,50 @@ footer {
   border-radius: 8px;
   color: #969696;
 }
-.news-details-area .blog-post-details .comment-form-wrap .form-clt input::placeholder, .news-details-area .blog-post-details .comment-form-wrap .form-clt textarea::placeholder {
+.news-details-area .Projects-post-details .comment-form-wrap .form-clt input::placeholder, .news-details-area .Projects-post-details .comment-form-wrap .form-clt textarea::placeholder {
   color: #BEBEBE;
 }
-.news-details-area .blog-post-details .comment-form-wrap .form-clt textarea {
+.news-details-area .Projects-post-details .comment-form-wrap .form-clt textarea {
   padding-bottom: 162px;
 }
-.news-details-area .blog-post-details .comment-form-wrap .theme-btn {
+.news-details-area .Projects-post-details .comment-form-wrap .theme-btn {
   color: var(--black);
   border-radius: 6px;
   font-weight: 700;
 }
-.news-details-area .blog-post-details .comment-form-wrap .theme-btn i {
+.news-details-area .Projects-post-details .comment-form-wrap .theme-btn i {
   transform: rotate(-40deg);
   margin-left: 10px;
   transition: all 0.4s ease-in-out;
 }
-.news-details-area .blog-post-details .comment-form-wrap .theme-btn::before {
+.news-details-area .Projects-post-details .comment-form-wrap .theme-btn::before {
   background-color: var(--white);
 }
-.news-details-area .blog-post-details .comment-form-wrap .theme-btn:hover {
+.news-details-area .Projects-post-details .comment-form-wrap .theme-btn:hover {
   color: var(--black);
 }
-.news-details-area .blog-post-details .comment-form-wrap .theme-btn:hover i {
+.news-details-area .Projects-post-details .comment-form-wrap .theme-btn:hover i {
   transform: rotate(0deg);
 }
 
-.blog-box-item {
+.Projects-box-item {
   margin-top: 30px;
 }
-.blog-box-item .blog-content {
+.Projects-box-item .Projects-content {
   margin-bottom: 25px;
 }
-.blog-box-item .blog-content .post-list {
+.Projects-box-item .Projects-content .post-list {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
 }
-.blog-box-item .blog-content .post-list li {
+.Projects-box-item .Projects-content .post-list li {
   font-size: 16px;
   font-weight: 500;
   color: #ABABAB;
 }
-.blog-box-item .blog-content .post-list li span {
+.Projects-box-item .Projects-content .post-list li span {
   color: var(--white);
   display: inline-block;
   font-weight: 500;
@@ -2830,26 +2823,26 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 5px 20px;
 }
-.blog-box-item .blog-content h3 a {
+.Projects-box-item .Projects-content h3 a {
   color: var(--white);
 }
-.blog-box-item .blog-content h3 a:hover {
+.Projects-box-item .Projects-content h3 a:hover {
   color: var(--theme);
 }
-.blog-box-item .blog-content.style-2 {
+.Projects-box-item .Projects-content.style-2 {
   margin-bottom: 0;
   margin-top: 25px;
 }
-.blog-box-item .blog-image {
+.Projects-box-item .Projects-image {
   position: relative;
   overflow: hidden;
 }
-.blog-box-item .blog-image img {
+.Projects-box-item .Projects-image img {
   width: 100%;
   height: 100%;
   transition: all 0.4s ease-in-out;
 }
-.blog-box-item .blog-image::before {
+.Projects-box-item .Projects-image::before {
   background-color: rgba(255, 255, 255, 0.3);
   bottom: 0;
   content: "";
@@ -2862,10 +2855,10 @@ footer {
   transition: all 500ms linear;
   z-index: 22;
 }
-.blog-box-item:hover .blog-image img {
+.Projects-box-item:hover .Projects-image img {
   transform: scale(1.1);
 }
-.blog-box-item:hover .blog-image::before {
+.Projects-box-item:hover .Projects-image::before {
   left: 0;
   right: 0;
   opacity: 0;
@@ -2893,20 +2886,20 @@ footer {
   color: var(--theme) !important;
 }
 
-.blog-singelbtn {
+.Projects-singelbtn {
   width: 42px;
   min-width: 42px;
   height: 42px;
   transition: all 0.4s;
 }
-.blog-singelbtn i {
+.Projects-singelbtn i {
   color: var(--black);
   transition: all 0.4s;
 }
-.blog-singelbtn:hover {
+.Projects-singelbtn:hover {
   background: var(--theme);
 }
-.blog-singelbtn:hover i {
+.Projects-singelbtn:hover i {
   color: var(--white);
 }
 
