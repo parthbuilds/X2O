@@ -4,16 +4,40 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../webfonts/Battle-tough.woff2");
-  font-weight:200 900;
-  font-style: normal;
+  src: url("../webfonts/EmiratesEssentials-Light.ttf");
+  font-weight:100 200;
+  font-style:normal;
 }
+
+@font-face {
+  font-family: "Emirates_Regular";
+  src: url("../webfonts/EmiratesEssentials-Regular.ttf");
+  font-weight: 400;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: "Emirates_Medium";
+  src: url("../webfonts/EmiratesEssentials-Medium.ttf");
+  font-weight:500;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: "Emirates_Bold";
+  src: url("../webfonts/EmiratesEssentials-Bold.ttf");
+  font-weight:800 900;
+  font-style:normal;
+}
+
 
 
 :root {
   --body: #ffffff;
   --black: #000;
+  --gray:#605F5F;
   --blackbg: #000000;
+  --greybg: #605F5F;
   --white: #fff;
   --spantext: #757575;
   --theme: #ab1842;
@@ -21,6 +45,7 @@
   --bg1: #161616;
   --bg2: #1b1b1b;
   --bg3: #fff;
+  --bg4:#f0f0f0;
   --bnbg: #0E0E0E;
   --border1: #454750;
   --pra-clr: #bebebe;
@@ -39,7 +64,7 @@ body {
   font-weight: normal;
   line-height: 28px;
   color: var(--white);
-  background-color: red;
+  background-color:var(--bg4);
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -119,7 +144,7 @@ a {
   text-decoration: none;
   outline: none !important;
   cursor: pointer;
-  color: var(--white);
+  color: var(--gray);
   transition: all 0.4s ease-in-out;
 }
 
@@ -183,7 +208,7 @@ span {
   transition: all 0.4s ease-in-out;
   font-size: 16px;
   font-family: "Inter", sans-serif;
-  color: var(--white);
+  color: var(--theme);
 }
 
 .common-social li a {
@@ -343,8 +368,20 @@ span {
   color: var(--black);
 }
 
+.gray-clr {
+  color: var(--gray);
+}
+
+.marron-clr {
+  color: var(--theme);
+}
+
 .blackbg {
   background: var(--blackbg);
+}
+
+.greybg {
+  background: var(--greybg);
 }
 
 .white-clr {
@@ -1551,7 +1588,7 @@ footer {
 
 .hero-section-version2 {
   padding: 190px 2px 130px;
-  background: url(../img/banner/hero-v2bg.png) no-repeat center center;
+  background: #f2f2f2;
   background-size: cover;
   z-index: 1;
 }
@@ -1587,12 +1624,22 @@ footer {
   left: initial;
 }
 .hero-section-version2 .hero-v2-content span {
-  font-size: 100px;
+  font-size: 110px;
   line-height: 85px;
-  color: var(--black);
+  /* color: var(--gray); */
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.hero-section-version2 .hero-v2-content span .thick{
+  font-size: 110px;
+  line-height: 85px;
+  /* color: var(--gray); */
+  font-family: 'Emirates_Bold';
   font-weight: 800;
   text-transform: uppercase;
 }
+
 .hero-section-version2 .banner-v2-thumb {
   width: 100%;
 }
@@ -1678,7 +1725,7 @@ footer {
     top: 15px;
   }
   .hero-section-version2 .hero-v2-content span {
-    font-size: 70px;
+    /* font-size: 70px; */
     line-height: 85px;
   }
 }
@@ -5153,8 +5200,23 @@ footer {
   font-size: 16px !important;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--theme);
 }
+
+.header-section .main-navbar .custom-nav .menu-item-theme button,
+.header-section .main-navbar .custom-nav .menu-item-theme a,
+.header-section .main-navbar .custom-nav .menu-link button,
+.header-section .main-navbar .custom-nav .menu-link a {
+  transition: all 0.4s;
+  font-size: 16px !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--theme);
+
+}
+
+
+
 @media (max-width: 1199px) {
   .header-section .main-navbar .custom-nav .menu-item button,
   .header-section .main-navbar .custom-nav .menu-item a,
@@ -5179,8 +5241,19 @@ footer {
 .header-section .main-navbar .custom-nav .menu-link button.active,
 .header-section .main-navbar .custom-nav .menu-link a:hover,
 .header-section .main-navbar .custom-nav .menu-link a.active {
-  color: var(--theme);
+  color: var(--bnbg);
 }
+
+.header-section .main-navbar .custom-nav .menu-item-grey button:hover, .header-section .main-navbar .custom-nav .menu-item-grey button.active,
+.header-section .main-navbar .custom-nav .menu-item-grey a:hover,
+.header-section .main-navbar .custom-nav .menu-item-grey a.active,
+.header-section .main-navbar .custom-nav .menu-link button:hover,
+.header-section .main-navbar .custom-nav .menu-link button.active,
+.header-section .main-navbar .custom-nav .menu-link a:hover,
+.header-section .main-navbar .custom-nav .menu-link a.active {
+  color: var(--gray);
+}
+
 .header-section .main-navbar .custom-nav .menu-item button:hover::after, .header-section .main-navbar .custom-nav .menu-item button.active::after,
 .header-section .main-navbar .custom-nav .menu-item a:hover::after,
 .header-section .main-navbar .custom-nav .menu-item a.active::after,
