@@ -144,16 +144,32 @@ a {
   text-decoration: none;
   outline: none !important;
   cursor: pointer;
-  color: var(--gray);
+  color: var(--white);
   transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .thumb-content p {
+        color: #000 !important; 
+        margin-top: -60px;
+    }
 }
 
 p {
   margin: 0px;
   transition: all 0.4s ease-in-out;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Inter", sans-serif;
-  color: var(--white);
+}
+
+@media (max-width:400px) {
+  p {
+  margin: 0px;
+  transition: all 0.4s ease-in-out;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: #0E0E0E;
+}
 }
 
 .zindex1 {
@@ -1631,7 +1647,7 @@ footer {
 }
 
 .hero-section-version2 .hero-v2-content span .thick{
-  font-size: 110px;
+  font-size: 150px;
   line-height: 85px;
   /* color: var(--gray); */
   font-family: 'Emirates_Bold';
@@ -1639,23 +1655,6 @@ footer {
   text-transform: uppercase;
 }
 
-@media (max-width: 400px) {
-  .hero-section-version2 .hero-v2-content span {
-  font-size: 180px;
-  line-height: 85px;
-  font-weight: 200;
-  text-transform: uppercase;
-}
-
-.hero-section-version2 .hero-v2-content span .thick{
-  font-size: 40px;
-  line-height: 85px;
-  /* color: var(--gray); */
-  font-family: 'Emirates_Bold';
-  font-weight: 800;
-  text-transform: uppercase;
-}
-}
 
 .hero-section-version2 .banner-v2-thumb {
   width: 100%;
@@ -1671,13 +1670,26 @@ footer {
   top: 15px;
 }
 .hero-section-version2 .banner-v2-thumb .thumb-content .explore-more {
-  color: var(--black);
+  color: var(--theme);
   font-weight: 600;
-  border-bottom: 1px solid var(--black);
-  color: var(--black);
+  border-bottom: 1px solid var(--theme);
 }
+
 .hero-section-version2 .banner-v2-thumb .thumb-content .explore-more i {
-  color: var(--black);
+  color: var(--theme);
+}
+
+
+@media (min-width:991px) {
+  .hero-section-version2 .banner-v2-thumb .thumb-content .explore-more {
+  color: var(--white);
+  font-weight: 600;
+  border-bottom: 1px solid var(--white);
+}
+
+.hero-section-version2 .banner-v2-thumb .thumb-content .explore-more i {
+  color: var(--white);
+}
 }
 .hero-section-version2 .banner-v2-thumb .hero-tag {
   display: flex;
@@ -1769,7 +1781,7 @@ footer {
 @media (max-width: 991px) {
   .hero-section-version2 .banner-v2-thumb .thumb-content {
     position: initial;
-    margin-top: 18px;
+    margin-top: 110px;
   }
   .hero-section-version2 .banner-v2-thumb .hero-tag {
     left: 20px;
@@ -1801,15 +1813,22 @@ footer {
     font-size: 48px;
     line-height: 65px;
   }
+  .hero-section-version2 .hero-v2-content span .thick{
+  font-size: 55px;
+  line-height: 85px;
+}
 }
 @media (max-width: 575px) {
   .hero-section-version2 {
-    padding: 105px 2px 75px;
+    padding: 155px 2px 75px;
   }
   .hero-section-version2 .banner-v2-thumb img {
     display: none;
+    
+
   }
   .hero-section-version2 .banner-v2-thumb .hero-tag {
+    display: none;
     left: 20px;
     top: 20px;
     position: initial;
@@ -1819,7 +1838,7 @@ footer {
   .hero-section-version2 .banner-v2-thumb .hero-tag li a {
     background: var(--white);
     color: var(--black);
-    border-color: var(--white);
+    border-color: var(--black);
     font-weight: 500;
   }
   .hero-section-version2 .banner-v2-thumb .hero-tag li a i {
@@ -1856,6 +1875,7 @@ footer {
     font-size: 58px;
     line-height: 50px;
   }
+  
 }
 
 .explore-more {
@@ -2119,7 +2139,7 @@ footer {
   max-width: 660px;
   font-weight: 500;
   text-transform: capitalize;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 36px;
 }
 @media (max-width: 1199px) {
@@ -7927,11 +7947,11 @@ input.main-search-input::placeholder {
     gap: 12px;
   }
   .scrolling-wrap .comm .cmn-textslide {
-    font-size: 24px;
+    font-size: 44px;
     line-height: 35px;
   }
   .scrolling-wrap .comm img {
-    width: 50px;
+    width: 90px;
     object-fit: contain;
   }
 }
@@ -8137,27 +8157,26 @@ input.main-search-input::placeholder {
 /* assets/css/main.css */
 
 #vr-headset-container {
-    position: absolute; /* Adjust positioning based on your overall hero section layout */
-    top: 50%; /* Center vertically within its positioned parent */
-    left: 50%; /* Center horizontally within its positioned parent */
-    transform: translate(-50%, -50%); /* Adjust for true centering */
-    width: 100%; /* Take full width of its parent */
-    max-width: 1410px; /* Max width to match your desired intrinsic width */
-    /* Set aspect ratio to prevent distortion. Calculate 512 / 1410 */
-    aspect-ratio: 1410 / 512; /* This is crucial for maintaining aspect ratio */
-    overflow: hidden; /* Hide anything outside the container */
-    z-index: 10; /* Adjust z-index if needed to layer above/below other elements */
-    /* You might want to add some margin or padding depending on your layout */
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    max-width: 1410px; 
+    aspect-ratio: 1410 / 512; 
+    overflow: hidden;
+    z-index: 10;
 }
 
-/* Ensure the canvas fills its parent container while respecting the aspect-ratio */
-#vr-headset-container canvas {
-    width: 100% !important;
-    height: 100% !important;
-    display: block; 
+@media (max-width: 768px) { 
+    #vr-headset-container {
+    border: 1px solid black;
+    border-radius: 18px;
+    margin-top: 50px;
+    background-color: var(--theme);
+    }
 }
+
 
 /* Media queries for responsiveness (adjust max-width for smaller screens if needed) */
 @media (max-width: 1200px) {
@@ -8182,8 +8201,8 @@ input.main-search-input::placeholder {
     justify-content: center; /* Center items when space allows */
     align-items: center; /* Align items vertically */
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-    gap: 20px; /* Space between the image and the 3D canvas */
-    margin-top: 40px; /* Adjust as needed for vertical spacing */
+    gap: 20px; 
+    margin-top: 40px; 
 }
 
 .hero-image-and-3d-wrapper .banner-v2-thumb {
@@ -8191,7 +8210,7 @@ input.main-search-input::placeholder {
     flex: 1; /* Allows it to grow and shrink */
     max-width: 600px; /* Max width for the image section on larger screens */
     width: 100%; /* Take full width on small screens */
-    min-width: 300px; /* Prevent it from getting too small */
+    min-width: 300px; 
 }
 
 #vr-headset-container {
@@ -8202,7 +8221,6 @@ input.main-search-input::placeholder {
     min-width: 250px; /* Prevent it from getting too small */
     aspect-ratio: 705 / 256; /* Maintain aspect ratio (new dimensions) */
     overflow: hidden;
-    /* Removed top/left/transform as flexbox handles positioning */
     z-index: 10;
 }
 
@@ -8220,15 +8238,14 @@ input.main-search-input::placeholder {
     }
     .hero-image-and-3d-wrapper .banner-v2-thumb,
     #vr-headset-container {
-        max-width: 90%; /* Allow wider use of screen space when stacked */
+        max-width: 100%; /* Allow wider use of screen space when stacked */
     }
 }
 
 @media (max-width: 768px) {
     .hero-image-and-3d-wrapper .banner-v2-thumb,
     #vr-headset-container {
-      padding-top: 20px;
-        max-width: 100%; /* Full width on mobile */
+      max-width: 100%; 
     }
 }
 
@@ -8241,26 +8258,78 @@ input.main-search-input::placeholder {
     /* Increased max-width for the 3D container */
     max-width: 800px; /* Changed from 700px to 800px */
     /* Adjusted aspect-ratio to maintain proportion with increased width */
-    aspect-ratio: 800 / 450; /* Changed from 700/400 to 800/450 */
+    aspect-ratio: 800 / 450;
     overflow: hidden;
     z-index: 10;
 }
-
-/* You might also need to review the hero-image-and-3d-wrapper gap or flex-basis if layout doesn't distribute as expected */
-/* .hero-image-and-3d-wrapper {
-    gap: 40px; // Consider increasing gap if side-by-side elements are too close
-} */
-
-@media (max-width: 992px) {
-    /* ... existing rules ... */
-    #vr-headset-container {
-        /* Maintain a consistent aspect ratio when stacked, if different from wide */
-        aspect-ratio: 16 / 9; /* Or adjust to a preferred aspect for stacked mobile view */
-    }
+.blackbg {
+  background-color: #0a0a0a;
 }
 
-@media (max-width:400px) {
-  #vr-headset-container canvas {
-    margin-top: 40px;
+.pb-space {
+  padding-bottom: 100px;
 }
+
+.white-clr {
+  color: #ffffff;
+}
+
+.text-light {
+  color: #cccccc;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.Projects-widget-item-022 {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Projects-widget-item-022:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
+}
+
+.thumb img {
+  width: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.thumb:hover img {
+  transform: scale(1.05);
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Custom image size for icon thumbnails */
+.service-thumb {
+  width: 80px;
+  min-width: 80px;
+}
+
+.service-thumb img {
+  border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Projects-widget-item-022 {
+    text-align: center;
+  }
+
+  .Projects-widget-item-022 .d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .service-thumb {
+    margin-bottom: 10px;
+  }
 }
