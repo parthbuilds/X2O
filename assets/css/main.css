@@ -107,8 +107,8 @@ h6 {
 
 h1 {
   font-size: 80px;
-  font-weight: 700;
-  line-height: 112%;
+  font-weight: 900;
+  line-height: 90%;
 }
 
 h2 {
@@ -1624,9 +1624,8 @@ footer {
   left: initial;
 }
 .hero-section-version2 .hero-v2-content span {
-  font-size: 110px;
+  font-size: 150px;
   line-height: 85px;
-  /* color: var(--gray); */
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -1638,6 +1637,24 @@ footer {
   font-family: 'Emirates_Bold';
   font-weight: 800;
   text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+  .hero-section-version2 .hero-v2-content span {
+  font-size: 180px;
+  line-height: 85px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.hero-section-version2 .hero-v2-content span .thick{
+  font-size: 40px;
+  line-height: 85px;
+  /* color: var(--gray); */
+  font-family: 'Emirates_Bold';
+  font-weight: 800;
+  text-transform: uppercase;
+}
 }
 
 .hero-section-version2 .banner-v2-thumb {
@@ -1725,7 +1742,7 @@ footer {
     top: 15px;
   }
   .hero-section-version2 .hero-v2-content span {
-    /* font-size: 70px; */
+    font-size: 70px;
     line-height: 85px;
   }
 }
@@ -1819,12 +1836,13 @@ footer {
     width: 30px;
   }
   .hero-section-version2 .hero-v2-content span {
-    font-size: 36px;
+    font-size: 50px;
     line-height: 50px;
   }
 }
 @media (max-width: 400px) {
   .hero-section-version2 .hero-v2-content {
+    margin-top: 24px;
     margin-bottom: 24px;
   }
   .hero-section-version2 .hero-v2-content h1 .text-adjust {
@@ -1835,7 +1853,7 @@ footer {
     width: 30px;
   }
   .hero-section-version2 .hero-v2-content span {
-    font-size: 28px;
+    font-size: 58px;
     line-height: 50px;
   }
 }
@@ -8115,3 +8133,134 @@ input.main-search-input::placeholder {
   content: "";
   background: rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=main.css.map */
+
+/* assets/css/main.css */
+
+#vr-headset-container {
+    position: absolute; /* Adjust positioning based on your overall hero section layout */
+    top: 50%; /* Center vertically within its positioned parent */
+    left: 50%; /* Center horizontally within its positioned parent */
+    transform: translate(-50%, -50%); /* Adjust for true centering */
+    width: 100%; /* Take full width of its parent */
+    max-width: 1410px; /* Max width to match your desired intrinsic width */
+    /* Set aspect ratio to prevent distortion. Calculate 512 / 1410 */
+    aspect-ratio: 1410 / 512; /* This is crucial for maintaining aspect ratio */
+    overflow: hidden; /* Hide anything outside the container */
+    z-index: 10; /* Adjust z-index if needed to layer above/below other elements */
+    /* You might want to add some margin or padding depending on your layout */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+}
+
+/* Ensure the canvas fills its parent container while respecting the aspect-ratio */
+#vr-headset-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block; 
+}
+
+/* Media queries for responsiveness (adjust max-width for smaller screens if needed) */
+@media (max-width: 1200px) {
+    #vr-headset-container {
+        /* No explicit height here, aspect-ratio handles it */
+        max-width: 100%; /* Allow it to scale down more */
+    }
+}
+
+@media (max-width: 768px) {
+    #vr-headset-container {
+        /* Adjust positioning or sizing further for mobile if required */
+        width: 95%; /* Slightly reduce width to provide padding on very small screens */
+        aspect-ratio: 1410 / 512; /* Maintain aspect ratio */
+    }
+}
+/* assets/css/main.css */
+
+/* New flex wrapper for the image section and 3D asset */
+.hero-image-and-3d-wrapper {
+    display: flex;
+    justify-content: center; /* Center items when space allows */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    gap: 20px; /* Space between the image and the 3D canvas */
+    margin-top: 40px; /* Adjust as needed for vertical spacing */
+}
+
+.hero-image-and-3d-wrapper .banner-v2-thumb {
+    position: relative; /* Keep relative for inner absolute elements if any */
+    flex: 1; /* Allows it to grow and shrink */
+    max-width: 600px; /* Max width for the image section on larger screens */
+    width: 100%; /* Take full width on small screens */
+    min-width: 300px; /* Prevent it from getting too small */
+}
+
+#vr-headset-container {
+    position: relative; /* Changed from absolute to relative within the flex container */
+    flex: 1; /* Allows it to grow and shrink */
+    max-width: 705px; /* New desired max width for the 3D canvas */
+    width: 100%; /* Take full width on small screens */
+    min-width: 250px; /* Prevent it from getting too small */
+    aspect-ratio: 705 / 256; /* Maintain aspect ratio (new dimensions) */
+    overflow: hidden;
+    /* Removed top/left/transform as flexbox handles positioning */
+    z-index: 10;
+}
+
+#vr-headset-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .hero-image-and-3d-wrapper {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        gap: 40px; /* More space when stacked */
+    }
+    .hero-image-and-3d-wrapper .banner-v2-thumb,
+    #vr-headset-container {
+        max-width: 90%; /* Allow wider use of screen space when stacked */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-image-and-3d-wrapper .banner-v2-thumb,
+    #vr-headset-container {
+      padding-top: 20px;
+        max-width: 100%; /* Full width on mobile */
+    }
+}
+
+/* assets/css/main.css */
+
+#vr-headset-container {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    /* Increased max-width for the 3D container */
+    max-width: 800px; /* Changed from 700px to 800px */
+    /* Adjusted aspect-ratio to maintain proportion with increased width */
+    aspect-ratio: 800 / 450; /* Changed from 700/400 to 800/450 */
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* You might also need to review the hero-image-and-3d-wrapper gap or flex-basis if layout doesn't distribute as expected */
+/* .hero-image-and-3d-wrapper {
+    gap: 40px; // Consider increasing gap if side-by-side elements are too close
+} */
+
+@media (max-width: 992px) {
+    /* ... existing rules ... */
+    #vr-headset-container {
+        /* Maintain a consistent aspect ratio when stacked, if different from wide */
+        aspect-ratio: 16 / 9; /* Or adjust to a preferred aspect for stacked mobile view */
+    }
+}
+
+@media (max-width:400px) {
+  #vr-headset-container canvas {
+    margin-top: 40px;
+}
+}
