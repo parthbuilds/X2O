@@ -1688,7 +1688,7 @@ footer {
 }
 
 .hero-section-version2 .banner-v2-thumb .thumb-content .explore-more i {
-  color: var(--white);
+  color: var(--black);
 }
 }
 .hero-section-version2 .banner-v2-thumb .hero-tag {
@@ -8319,6 +8319,7 @@ h4 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  
   .Projects-widget-item-022 {
     text-align: center;
   }
@@ -8333,3 +8334,4 @@ h4 {
     margin-bottom: 10px;
   }
 }
+
